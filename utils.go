@@ -1,18 +1,21 @@
-package tokens
+package updater
 
 import (
 	"fmt"
 	"os"
+	"path"
 	"path/filepath"
 )
 
 func getJSONFiles() []string {
 	var list []string
-	dir, err := os.Getwd()
+	wd, err := os.Getwd()
 	if err != nil {
 		fmt.Println("Error getting current directory:", err)
 		return list
 	}
+
+	dir := path.Join(wd, "tokenslist")
 
 	files, err := os.ReadDir(dir)
 	if err != nil {
