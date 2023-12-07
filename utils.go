@@ -15,7 +15,7 @@ func getJSONFiles() []string {
 		return list
 	}
 
-	dir := path.Join(wd, "tokenslist")
+	dir := path.Join(wd, "tokenlists")
 
 	files, err := os.ReadDir(dir)
 	if err != nil {
