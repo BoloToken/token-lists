@@ -1,7 +1,7 @@
 {
   "name": "Quickswap Token List",
   "logoURI": "ipfs://QmQ9GCVmLQkbPohxKeCYkbpmwfTvHXrY64TmBsPQAZdbqZ",
-  "source": "",
+  "source": "https://raw.githubusercontent.com/sameepsi/quickswap-default-token-list/master/src/tokens/mainnet.json",
   "tokens": [
     {
       "chainId": 137,
